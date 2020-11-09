@@ -1,8 +1,13 @@
-<div>
-  <p><%= @question %><br><em>-You</em></p>
+<div class="answer-box">
+  <div class="talk">
+    <p><%= @question %></p>
+    <p><em>-You</em></p>
+  </div>
+  <div class="talk final">
+    <p id="answer-phrase"><%= @answer %></p>
+    <p><em>-Your Coach</em></p>
+  </div>
+  <div class="link">
+    <%= link_to "Ask a new question", ask_path %>
+  </div>
 </div>
-</div>
-  <p><%= @answer %><br><em>-Your Coach</em></p>
-<div>
-
-<%= link_to "ask a new question", ask_path %>

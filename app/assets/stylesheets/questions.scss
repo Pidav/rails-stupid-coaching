@@ -1,3 +1,62 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+$yellow: #FFFEE1;
+$blue: #337AB8;
+
+body {
+  font-family: sans-serif;
+  h1 {
+    font-weight: normal;
+  }
+  p {
+    margin: 8px 0px;
+    font-weight: lighter;
+  }
+}
+
+.container {
+  width: 400px;
+  margin: 0px auto;
+}
+
+.talk {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border-left: 4px solid lightgray;
+}
+
+.talk.final {
+  background-color: $yellow;
+  #answer-phrase {
+    font-weight: 500;
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.form-box {
+  .ask {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    #question {
+      flex-grow:1;
+      border-radius: 4px 0px 0px 4px;
+      padding-left: 8px;
+      border: 1px solid lightgrey;
+    }
+    .button {
+      color: white;
+      padding: 12px;
+      background-color: $blue;
+      border: none;
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+}
